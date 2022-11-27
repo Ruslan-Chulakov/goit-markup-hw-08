@@ -1,0 +1,104 @@
+.mailing-form {
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+
+    //desctop
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+}
+
+.mailing-form__title {   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--font-color);
+//     line-height: 0.87;
+}
+
+.mailing-form__field {
+    @media (max-width: 1199px) {
+        margin-top: 20px
+    }
+    
+    // desctop
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+    }
+}
+
+.mailing-form__input {
+    display: block;
+    padding: 15px 16px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    
+    color: var(--footer-white-tranparent);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    
+    // tablet
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    // desctop
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+
+    }
+}
+
+.mailing-form__button {
+    @media (max-width: 1199px) {
+        margin-top: 20px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--acent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--font-color);
+
+    // desctop
+    @media screen and (min-width: 1200px) {
+        transition-property: background-color;
+        transition-duration: var(--duration);
+        transition-timing-function: var(--timing-fn);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--button-acent);
+        }
+    }
+}
+

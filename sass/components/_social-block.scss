@@ -1,0 +1,26 @@
+.social-block {
+    // mobil
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+
+    // desctop
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
+
+.social-block__title {
+    margin-bottom: 20px;
+    
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--font-color);
+//     line-height: 0.87;
+
+}

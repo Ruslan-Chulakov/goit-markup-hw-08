@@ -1,0 +1,35 @@
+.examples {
+    padding-top: 0;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    
+}
+.examples-list {
+    display: flex;
+    gap: 30px;
+}
+
+.examples-list__thumb {
+    position: relative;
+}
+
+.examples-list__content {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--font-color);
+
+
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--exampl-bg);
+}

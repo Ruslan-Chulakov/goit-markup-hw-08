@@ -1,0 +1,114 @@
+.menu-burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    fill: var(--title-color);
+
+    &:focus {
+        fill: var(--acent-color)
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-container {    
+        position: fixed;
+        z-index: 100;
+        overflow-y: scroll;
+    
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+    
+        padding: 48px 40px;
+    
+        background-color: var(--font-color);
+
+        transform: translateX(100%);
+        transition-property: transform;
+        transition-duration: var(--duration);
+        transition-timing-function: var(--timing-fn);
+    
+        &.is-open {
+            
+            transform: translateX(0);
+        }
+    }
+}
+
+// tablet
+.menu-container {
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 88px;
+    }
+}
+
+// desctop
+.menu-container {
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+}
+
+
+.menu-cross-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    fill: var(--title-color);
+    
+    &:focus {
+        fill: var(--acent-color)
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+// .menu__cross-icon {
+//     display: none;
+// }
+
+.menu.is-open .menu__cross-icon {
+    display: block;
+}
+
+.menu.is-open .menu__burger-icon {
+    display: none;
+}
+
+// .menu__icon {
+//     background-color: red;
+//     fill: black;
+//     color: black;
+// }

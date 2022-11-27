@@ -1,0 +1,34 @@
+// mobile
+@media screen and (max-width: 767px) {
+    .soc-link {
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin-top: 64px;
+        gap: 10px;
+    }
+
+    .soc-link__item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+
+    .soc-link__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+        color: var(--acent-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .soc-link {
+        display: none;
+    }
+}
+
+
+
