@@ -1709,10 +1709,10 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
 }
 @media screen and (max-width: 767px) {
   .filter {
-    max-width: 321px;
     margin-bottom: 40px;
   }
 }
@@ -1728,8 +1728,8 @@ button {
 .filter__button {
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
