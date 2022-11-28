@@ -222,13 +222,26 @@
 
           <ul class="team-list">
             <li class="team-list__item">
-              <img 
-                class="team-list__img"
-                srcset="./images/team/teamcard1.jpg 1x, ./images/team/teamcard1@2x.jpg 2x"
-                src="./images/team/teamcard1.jpg"
-                alt="Ігор Дем'яненко - Продукт Дизайнер"
-                width="270"
-              />
+              <picture>
+                <source 
+                  srcset="./images/team/teamcard1-mob-450.jpg 1x, 
+                  ./images/team/teamcard1-mob-900@2x.jpg 2x" 
+                  media="(max-width: 767px)" 
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard1-tab-354.jpg 1x, 
+                  ./images/team/teamcard1-tab-708@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard1-270.jpg 1x, 
+                  ./images/team/teamcard1-540@2x.jpg 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"/>
+                <img src="./images/team/teamcard1-270.jpg" alt="Ігор Дем'яненко, Product Designer">
+              </picture>
               <div class="team-list__info">
                 <h3 class="team-list__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -265,13 +278,33 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img 
+              <picture>
+                <source 
+                  srcset="./images/team/teamcard2-mob-450.jpg 1x, 
+                  ./images/team/teamcard2-mob-900@2x.jpg 2x" 
+                  media="(max-width: 767px)" 
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard2-tab-354.jpg 1x, 
+                  ./images/team/teamcard2-tab-708@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard2-270.jpg 1x, 
+                  ./images/team/teamcard2-540@2x.jpg 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"/>
+                <img src="./images/team/teamcard2-270.jpg" alt="Ольга Рєпіна - Фронтенд Девелопер">
+              </picture>
+              <!-- <img 
                 class="team-list__img"
                 srcset="./images/team/teamcard2.jpg 1x, ./images/team/teamcard2@2x.jpg 2x"
                 src="./images/team/teamcard2.jpg"
                 alt="Ольга Рєпіна - Фронтенд Девелопер"
                 width="270"
-              />
+              /> -->
               <div class="team-list__info">
                 <h3 class="team-list__subtitle">Ольга Рєпіна</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -308,13 +341,33 @@
               </div>              
             </li>
             <li class="team-list__item">
-              <img 
+              <picture>
+                <source 
+                  srcset="./images/team/teamcard3-mob-450.jpg 1x, 
+                  ./images/team/teamcard3-mob-900@2x.jpg 2x" 
+                  media="(max-width: 767px)" 
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard3-tab-354.jpg 1x, 
+                  ./images/team/teamcard3-tab-708@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard3-270.jpg 1x, 
+                  ./images/team/teamcard3-540@2x.jpg 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"/>
+                <img src="./images/team/teamcard3-270.jpg" alt="Микола Тарасов - Маркетинг">
+              </picture>
+              <!-- <img 
                 class="team-list__img" 
                 srcset="./images/team/teamcard3.jpg 1x, ./images/team/teamcard3@2x.jpg 2x"
                 src="./images/team/teamcard3.jpg" 
                 alt="Микола Тарасов - Маркетинг" 
                 width="270" 
-              />
+              /> -->
               <div class="team-list__info">
                 <h3 class="team-list__subtitle">Микола Тарасов</h3>
                 <p class="team-list__position">Marketing</p>
@@ -351,13 +404,33 @@
               </div>              
             </li>
             <li class="team-list__item">
-              <img 
+               <picture>
+                <source 
+                  srcset="./images/team/teamcard4-mob-450.jpg 1x, 
+                  ./images/team/teamcard4-mob-900@2x.jpg 2x" 
+                  media="(max-width: 767px)" 
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard4-tab-354.jpg 1x, 
+                  ./images/team/teamcard4-tab-708@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg" 
+                />
+                <source 
+                  srcset="./images/team/teamcard4-270.jpg 1x, 
+                  ./images/team/teamcard4-540@2x.jpg 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"/>
+                <img src="./images/team/teamcard4-270.jpg" alt="Михайло Єрмаков - ЮІ Дизайнер">
+              </picture>
+              <!-- <img 
                 class="team-list__img" 
                 srcset="./images/team/teamcard4.jpg 1x, ./images/team/teamcard4@2x.jpg 2x"
                 src="./images/team/teamcard4.jpg" 
                 alt="Михайло Єрмаков - ЮІ Дизайнер" 
                 width="270" 
-              />
+              /> -->
               <div class="team-list__info">
                 <h3 class="team-list__subtitle">Михайло Єрмаков</h3>
                 <p class="team-list__position">UI Designer</p>
